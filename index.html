@@ -8,10 +8,10 @@
 </head>
 <body>
     
-<section id="menu">
+<section class="menu">
 
     <div class="btn">
-        <button class="start">START</button>
+        <button class="start" onclick="startGame()">START</button>
     </div>
     
     <div class="level">
@@ -21,10 +21,14 @@
             <option value="Hard">Hard</option>
         </select>
     </div>
+    <!-- New elements for score and controls -->
+    <div id="score" class="hidden">Score: 0</div>
+    <button class="stop hidden" onclick="stopGame()">Stop</button>
+    <button class="reset hidden" onclick="resetGame()">Reset</button>  
     
 </section>
 
-    <main>
+    <main class="hidden">
     
         <div class="mole-container">
             <!-- Mole 1 -->
@@ -79,6 +83,6 @@
             
         </div>
     </main>
-   
+   <script src="js/main.js"></script>
 </body>
 </html>
