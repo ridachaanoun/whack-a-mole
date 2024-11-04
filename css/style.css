@@ -5,16 +5,16 @@
 
 }
 
-body{
+#menu{
     background-image: url(../img/whack-a-mole-Photoroom.png);
     background-repeat: no-repeat ;
     background-size:cover;
-    background-position-y: -100px;
-    
-}
-#menu{
-    /* display: none; */
-
+    /* background-position-y: -100px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 5rem;
 }
 
  
@@ -42,7 +42,6 @@ h3{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 550px;
 
 }
 
@@ -71,7 +70,7 @@ main {
     margin: 0;
     background-color: #d89e62;
     font-family: Arial, sans-serif;
-    display: none;
+    /* display: none; */
 
 }
 
