@@ -12,7 +12,10 @@ body{
     background-position-y: -100px;
     
 }
+#menu{
+    /* display: none; */
 
+}
 
  
 h3{
@@ -22,7 +25,7 @@ h3{
 
 .start{
     border-radius: 10px;
-    background-color: rgb(47, 213, 47);
+    background-color: #653113;
     width: 10rem;
     height: 4rem;
     font-size: 25px;
@@ -53,9 +56,167 @@ h3{
     border-radius: 10px;
     height: 4rem;
     width: 14rem;
-    background-color: rgb(213, 69, 47);
+    background-color: #fff;
     display: flex;
     text-align: center;
     font-size: 20px;
     border: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d89e62;
+    font-family: Arial, sans-serif;
+    display: none;
+
+}
+
+.mole-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+/* Each mole container */
+.mole {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 140px;
+    height: 180px;
+}
+
+/* Dirt styling with shadow */
+.dirt {
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(circle, #7a4b35, #5d4037);
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+}
+
+/* Mole head with shading */
+.mole-head {
+    width: 100px;
+    height: 120px;
+    background: radial-gradient(circle at 60% 40%, #1b1b1b, #000);
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Eyes */
+.mole-head::before,
+.mole-head::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #fff, #d3d3d3);
+    border-radius: 50%;
+}
+
+.mole-head::before {
+    left: 25px;
+}
+
+.mole-head::after {
+    right: 25px;
+}
+
+/* Nose */
+.mole-nose {
+    width: 20px;
+    height: 15px;
+    background: radial-gradient(circle at 50% 40%, #9c5d3d, #6a3924);
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Paws with shading and claws */
+.mole-paw-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.mole-paw {
+    width: 25px;
+    height: 15px;
+    background: radial-gradient(circle at 50% 30%, #1b1b1b, #000);
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Claws */
+.mole-paw::before,
+.mole-paw::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    background: linear-gradient(to bottom, #f2f2f2, #c1c1c1);
+    border-radius: 2px;
+}
+
+.mole-paw::before {
+    left: 3px;
+}
+
+.mole-paw::after {
+    right: 3px;
+}
+
+/* Bomb styling */
+.bomb {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 50% 50%, #3c3c3c, #1a1a1a);
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+/* Flame effect on bomb */
+.bomb::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ff8c00, #ff4500);
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(255, 69, 0, 0.5);
+}
+.hole{
+    background: #d89e62;
+    backdrop-filter: blur;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    z-index: 10;
+    top: 210px;
+}
+.mole-head{
+    top: 162px;
 }
