@@ -95,9 +95,11 @@ main {
 
 .mole-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     align-items: flex-end;
     padding: 20px;
+    width: 650px;
 }
 
 /* Each mole container */
@@ -230,7 +232,7 @@ main {
     background: #d89e62;
     backdrop-filter: blur;
     width: 200px;
-    height: 150px;
+    height: 140px;
     position: absolute;
     z-index: 10;
     top: 210px;
