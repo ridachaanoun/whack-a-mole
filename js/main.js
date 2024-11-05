@@ -24,4 +24,14 @@ function startGame() {
     stopBtn.classList.remove("hidden");
     resetBtn.classList.remove("hidden");
 
+    let scoreValue = 0;
+    const moleHeads = document.querySelectorAll(".mole-head")
+    moleHeads.forEach(molehead => {
+        molehead.addEventListener("click",  () =>{
+            scoreValue++;
+            score.textContent = scoreValue;
+        })
+      }
+      )
+
 }
