@@ -232,7 +232,7 @@ main {
     background: #d89e62;
     backdrop-filter: blur;
     width: 200px;
-    height: 140px;
+    height: 150px;
     position: absolute;
     z-index: 10;
     top: 210px;
@@ -286,3 +286,17 @@ button.stop:hover,
 button.reset:hover {
     background-color: #3e2a18;
 }
+
+
+
+
+.mole-container {
+    cursor: url('../img/icons8-marteau-96.png'), auto;
+
+}
+
+.mole-container:active {
+    transform: scale(0.9); 
+    transition: transform 0.1s;
+}
+
